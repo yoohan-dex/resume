@@ -44,9 +44,8 @@ module.exports = {
       'main',
     ],
   },
-  progress: true,
   devtool: 'source-map',
   plugins: [
-    new StaticSitePlugin('bundle.js', '/', resumeData),
+    new StaticSitePlugin('bundle.js', ['/build', '/'], resumeData),
   ],
 };

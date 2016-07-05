@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import Section from './Section';
 import Progress from '../wheels/Progress';
 const Language = (props) => {
@@ -15,5 +15,10 @@ const Language = (props) => {
       </dl>
     </Section>
   );
+};
+
+Language.propTypes = {
+  section_names: PropTypes.object,
+  language: PropTypes.object,
 };
 export default Language;

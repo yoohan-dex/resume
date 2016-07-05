@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import Section from './Section';
 
 const ProjectItem = (props) => {
@@ -13,10 +13,7 @@ const ProjectItem = (props) => {
     </Section>
   );
 };
-
+ProjectItem.propTypes = {
+  project: PropTypes.object,
+}
 export default ProjectItem;
-// <dl className="exp-description">
-//         <dt className="exp-place">{exp.place}</dt>
-//         {exp.description.map(renderDescription)}
-//         <dd className="exp-stack"></dd>
-//       </dl>

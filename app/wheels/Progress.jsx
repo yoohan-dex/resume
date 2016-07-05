@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 
 const Progress = (props) => {
   const cert = props.cert;
@@ -14,6 +14,10 @@ const Progress = (props) => {
       </dd>
     </dl>
   );
+};
+
+Progress.propTypes = {
+  cert: PropTypes.object,
 };
 
 export default Progress;

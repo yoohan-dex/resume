@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import Section from './Section';
 import ExperienceItem from './ExperienceItem';
 const Experience = (props) => {
@@ -12,16 +12,9 @@ const Experience = (props) => {
   );
 };
 
+Experience.propTypes = {
+  experience: PropTypes.array,
+  section_names: PropTypes.object,
+};
+
 export default Experience;
-// <dl>
-      //   <dt className="exp-title-wrapper">
-      //     <span className="exp-title-name">{exp.name}</span>
-      //     <span className="exp-title-place">{exp.place}</span>
-      //     <span className="timeline-wrapper">
-      //       <time className="timeline-title">
-      //         {`${props.startTime} ~ ${props.endTime}`}
-      //       </time>
-      //     </span>
-      //   </dt>
-      //   <dd></dd>
-      // </dl>

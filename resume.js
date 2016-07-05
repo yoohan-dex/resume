@@ -1,5 +1,6 @@
 module.exports = {
   title: '姚帆 - 个人简历',
+  ga_id: 'UA-80293062-1',
   name: '姚帆',
   repo: 'https://github.com/yoohan-dex/resume.git',
   job_description: ['前端工程师', 'JS工程师'],

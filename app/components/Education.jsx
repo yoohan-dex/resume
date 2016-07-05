@@ -13,13 +13,8 @@ const Education = (props) => {
     </Section>
   );
 };
-// Education.propTypes = {
-  
-//   // start: PropTypes.number,
-//   // end: PropTypes.number,
-//   // school: PropTypes.string,
-//   // major: PropTypes.string,
-//   // honor: PropTypes.string,
-//   // timeline: PropTypes.bool,
-// };
+Education.propTypes = {
+  education: PropTypes.object,
+  section_names: PropTypes.object,
+};
 export default Education;

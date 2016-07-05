@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import Section from './Section';
 const Skill = (props) => {
   const skill = props.skill;
@@ -12,6 +12,10 @@ const Skill = (props) => {
       </dl>
     </Section>
   );
+};
+
+Skill.propTypes = {
+  skill: PropTypes.object,
 };
 
 export default Skill;

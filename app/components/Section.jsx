@@ -7,7 +7,7 @@ const Section = (props) => {
       </time>
     </h3>
   ) : null;
-  const demo = props.demo? (
+  const demo = props.demo ? (
     <a href={props.demo} className="project-demo">DEMO</a>
   ) : null;
   const source = props.source ? (
@@ -47,7 +47,13 @@ const Section = (props) => {
 };
 
 Section.propTypes = {
-  timeline: PropTypes.string,
+  section: PropTypes.object,
+  startTime: PropTypes.string,
+  endTime: PropTypes.string,
+  demo: PropTypes.string,
+  source: PropTypes.string,
+  item: PropTypes.bool,
+  iteminitem: PropTypes.bool,
   children: PropTypes.node,
 };
 

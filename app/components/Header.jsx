@@ -20,7 +20,7 @@ const Header = (props) => {
 };
 
 Header.propTypes = {
-  name: PropTypes.string.isRequired,
+  name: PropTypes.string,
   job_description: PropTypes.array,
   contact: PropTypes.array,
 };

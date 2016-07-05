@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import Section from './Section';
 import ProjectItem from './ProjectItem';
 const Project = (props) => {
@@ -12,4 +12,8 @@ const Project = (props) => {
   );
 };
 
+Project.propTypes = {
+  section_names: PropTypes.object,
+  projects: PropTypes.array,
+};
 export default Project;

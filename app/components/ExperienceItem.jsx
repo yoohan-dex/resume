@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import Section from './Section';
 const ExperienceItem = (props) => {
   const exp = props.exp;
@@ -14,6 +14,10 @@ const ExperienceItem = (props) => {
       </dl>
     </Section>
   );
+};
+
+ExperienceItem.propTypes = {
+  exp: PropTypes.object,
 };
 
 export default ExperienceItem;
