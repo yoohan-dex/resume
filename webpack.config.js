@@ -27,6 +27,7 @@ module.exports = {
   sassLoader: {
     includePaths: [path.resolve(__dirname, './app/sass/utils'),
                   path.resolve(__dirname, './app/sass/components'),
+                  path.resolve(__dirname, './app/sass/utils/static'),
                   path.resolve(__dirname, './app/sass/wheels')],
     outputStyle: 'compressed',
     sourceMap: true,
@@ -46,6 +47,6 @@ module.exports = {
   },
   devtool: 'source-map',
   plugins: [
-    new StaticSitePlugin('bundle.js', ['/build', '/'], resumeData),
+    new StaticSitePlugin('bundle.js', ['/resume', '/'], resumeData),
   ],
 };
