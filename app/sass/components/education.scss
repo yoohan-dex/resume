@@ -1,7 +1,7 @@
 .education-school {
   font-size: $font-size-huge;
   font-weight: bold;
-  margin: 0;
+  margin-left: $padding-large-horizontal;
   @media ( max-width : $screen-xs-max ){
     font-size: $font-size-large;
   }
@@ -9,20 +9,24 @@
 
 .education-major,
 .education-honor {
+  margin-top: $padding-small-vertical;
+  margin-bottom: $padding-small-vertical;
   list-style-type: none;
-  line-height: $line-height-base;
-  margin: $padding-small-vertical 0;
-  padding: 0;
+  line-height: 1.4;
 }
 @include set-section-icon(education, $fa-var-book);
 
 .education-major {
   @include set-li-icon($fa-var-graduation-cap);
+  padding-left: 0;
 }
 .education-honor {
   
   @include set-li-icon($fa-var-trophy);
+  padding-left: 0;
+  
 }
 .education-description {
-  margin-left: $padding-large-vertical;
+  margin-left: 0;
+  
 }

@@ -15,7 +15,7 @@ module.exports = {
     value: 'yoohan-dex',
   }, {
     type: 'blog',
-    value: 'http://page.github.io',
+    value: '暂无',
   }, {
     type: 'phone',
     value: '13824829707',
@@ -26,10 +26,10 @@ module.exports = {
   education: {
     type: 'undergraduate',
     school: '广东海洋大学',
-    major: '计算机科学',
+    major: '计算机科学（本科）',
     start: 2013,
     end: 2017,
-    honor: '2016年度`校级SB一等奖`',
+    honor: ['2016年大力神杯`嵌入式省赛三等奖`', '2017年度优秀毕业生'],
   },
   language: {
     type: 'english',
@@ -43,34 +43,33 @@ module.exports = {
       score: '480',
     }],
     descriptions: [
-      '能`流畅阅读`英文专业书籍、文档及其他资料',
-      '可`无字幕`观看MOOC课程、开发者大会视频',
-      '能够在`英文邮件列表`、`Stack Overflow` 等社区正常交流',
+      '能 `流畅阅读` 英文专业书籍、文档',
+      '可 `无字幕` 观看MOOC课程、开发者大会视频',
+      '能够在`Medium`、`Discord`、`github` 等社区正常交流',
     ],
   },
   experience: [{
-    place: '腾讯前端部门',
+    place: '腾讯用户研究与体验设计部',
     en: 'frontend',
     ch: '前端开发',
     start: '2017.06.12',
-    end: '2017.02.01',
+    end: '2017.012.01',
     descriptions: [
-      '参与公司内部办公系统的前端开发，基于`React`和`Bootstrap`实现前端组件及数据交互',
+      '使用 `HTML`、`CSS` 快速构建出兼容主流浏览器的页面',
+      '进行 `符合W3C标准` 的网站重构',
       '使用`wepback`和`Sass`完成可扩增的`自动化工程部署`',
     ],
-    stack: ['bootstrap', 'redux', 'react', 'sass', 'webpack'],
   }, {
     place: '广东海洋大学领沃实验室',
-    en: 'backend',
-    ch: '后台开发',
+    en: 'DeepLearn',
+    ch: '深度学习',
     start: '2016.01.1',
     end: '2016.10.01',
     descriptions: [
-      '负责开发整容点评网站前端页面',
       '引导新生走进前端的世界',
-      '使用`webpack`，`Sass`和`React`为实验室构建一套自动化开发手脚架',
+      '秘密开发足以 `毁灭世界` 的 `人工智能`',
+      '负责日常的杀人灭口工作',
     ],
-    stack: ['webpack', 'redux', 'functional programing'],
   }],
   projects: [{
     ch: '简历生成器',
@@ -79,30 +78,62 @@ module.exports = {
     source: 'https://github.com/yoohan-dex/react-resume',
     descriptions: [
       '这份在线简历的生成器',
-      '从 `js文` 读取数据，`React `生成 `HTML`，`Sass` 生成响应式样式',
+      '从 `js文件 ` 中读取数据，使用 `React `生成 `HTML`，`Sass` 生成响应式样式',
+      '使用 `Webpack` 编译压缩及管理',
     ],
   }, {
-    ch: '简历生成器',
-    en: 'Resume generator',
-    demo: 'https://yoohan-dex.github.io',
-    source: 'https://github.com/yoohan-dex/react-resume',
+    ch: 'redux单页登录流探索',
+    en: 'Redux Loginflow',
+    source: 'https://github.com/yoohan-dex/myBlog',
     descriptions: [
-      '这份在线简历的生成器',
-      '从 `js文` 读取数据，`React `生成 `HTML`，`Sass `生成响应式样式',
+      '使用 `Redux` 的所有生态库进行 `前端数据流管理`',
+      '使用 `Graphql` 做数据接口, `Express`和`mongodb`后台管理, `Nginx`负载均衡',
+      '尝试探索`Progress Web App`',
     ],
   }],
   skills: [{
     ch: '前端开发',
     en: 'frontend',
-    brief: 'HTML5,CSS3,SASS',
-    descriptions: [
-      '能够编写语义化的 `HTML`，模块化的 `CSS`，实现较复杂的布局与动画',
-      '能够编写语义化的 `HTML`，模块化的 `CSS`，实现较复杂的布局与动画',
-      '能够编写语义化的 `HTML`，模块化的 `CSS`，实现较复杂的布局与动画',
-    ],
+    items: [{
+      brief: ' `HTML` , `CSS` ',
+      descriptions: [
+        '能够编写语义化的 `HTML`，模块化的 `CSS`，实现较复杂的布局与动画',
+        '熟悉已标准化的 `HTML5` / `CSS3` 新特性，实验项目中能尝试使用未广泛实现的新标准',
+      ],
+    }, {
+      brief: '`ECMAScript` ( `JavaScript` )',
+      descriptions: [
+        '熟练使用` ES6 `, 熟悉JS `函数式编程` ',
+        '熟悉 `ECMAScript` 新标准及 `JS处理工具` ',
+      ],
+    }, {
+      brief: '`React` ， `Redux` ， `RxJS`， `Bootstrap` ',
+      descriptions: [
+        '熟悉`React` 与 `Redux` 及其生态库',
+        '熟练使用 `Bootstrap` , `960` 等样式框架',
+        '熟练使用 `Sass`，`PostCSS` 等工具',
+        '在项目中使用过`RxJS`',
+        '掌握基本 `SEO` ，`前端性能优化` ，并能在项目中运用',
+      ],
+    }],
   }, {
-    ch: '前端工程实践',
-    brief: '`WEBPACK`,`GULP`,`NPM`',
-    descriptions: ['', '', ''],
+    ch: '后端开发',
+    en: 'backend',
+    items: [{
+      brief: '`node.js` ，`Express` ，`mongodb` ，`Nginx` ，`Docker`',
+      descriptions: [
+        '熟悉node.js并能用于开发前端工作流',
+        '能用 `Express` 和 `mongodb` 开发小型WebAPP',
+        '使用过 `Nginx` 和 `Docker` ',
+      ],
+    }, {
+      brief: '`Bash` ，`Git` ，`Markdown`, `VScode` ',
+      descriptions: [
+        '两年 `Linux` 使用经验，熟悉日常 `Bash` 命令，写 `简单脚本` ，`配置开发环境` 等',
+        '熟练使用 `Git` 版本管理工具',
+        '使用 `Markdown` 进行日常写作',
+        '熟练配置及使用 `VScode `等现代编辑器',
+      ],
+    }],
   }],
 };

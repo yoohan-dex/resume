@@ -1,15 +1,13 @@
 import React, { PropTypes } from 'react';
 import Section from './Section';
+import SkillItem from './SkillItem';
 const Skill = (props) => {
   const skill = props.skill;
-  const renderDescription = (desc) =>
-    <dd className="skill-description-item">{desc}</dd>;
+  const renderItem = (item) =>
+    <SkillItem item={item} />;
   return (
     <Section item section={skill}>
-      <dl className="skill-description">
-        <dt className="skill-brief">{skill.brief}</dt>
-        {skill.descriptions.map(renderDescription)}
-      </dl>
+      {skill.items.map(renderItem)}
     </Section>
   );
 };

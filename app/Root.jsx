@@ -4,7 +4,8 @@ import indexCss from './sass/index.scss';
 import ga from './wheels/ga';
 
 const Root = (props) => {
-  const gaId = ga(props.ga_id);
+  const gaScript = props.ga_id ?
+    <script dangerouslySetInnerHTML={{ __html: ga(props.ga_id) }} /> : null;
   return (
     <html>
       <head>
@@ -15,8 +16,7 @@ const Root = (props) => {
       </head>
       <body>
         <Index {...props} />
-        <script dangerouslySetInnerHTML={{ __html: gaId }} />
-        <script>{'console.log(\'jiji\')'}</script>
+        {gaScript}
       </body>
     </html>
   );

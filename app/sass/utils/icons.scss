@@ -3,7 +3,7 @@
   font-size: inherit;
   text-rendering: auto;
   font-smooth: grayscale;
-  tansiform: translate(0,0);
+  transform: translate(0,0);
 }
 
 @mixin fa-icon($size, $padding, $background, $foreground : $easy-white){
