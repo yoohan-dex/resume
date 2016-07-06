@@ -2,7 +2,7 @@
 
 * 从`resume.js`文件中取出数据，自动填充数据并排版
 * 使用`React`和`Sass`制作，`Webpack`作为自动化工具
-* 可以一行代码部署到page服务器
+* 可以一行命令部署到page服务器
 
 ## A generator of static resume page 
 * Retrive data from `resume.js` to build a exactly beautiful Web page
@@ -45,5 +45,5 @@
 
 ##Feedback
 
- Welcome feedback if you have any problems and the demo have all my contact  
+ Welcome feedback if you have any problems and the demo has all my contact  
 
