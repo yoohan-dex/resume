@@ -7,7 +7,8 @@
 ## A generator of static resume page 
 * Retrive data from `resume.js` to build a exactly beautiful Web page
 * Built with `React`, `Sass` and `Webpack` 
-* Deploy to `github-page` just one command line  
+* Deploy to `github-page` just one command line
+
 ##环境要求
 
 1. [node.js >=4.4](https://nodejs.org/en/)
