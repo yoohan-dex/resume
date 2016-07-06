@@ -21,12 +21,14 @@
 }
 
 .project-description {
-  adding-left: $padding-small-horizontal;
+  padding-left: $padding-small-horizontal;
   padding-right: $padding-small-horizontal;
   margin: $padding-small-vertical 0;
 
 }
 .project-description-item {
   @include set-li-icon($fa-var-fire);
+  margin-top: $padding-small-vertical;
+  margin-bottom: $padding-small-vertical;
   padding-left: 0;
 }
