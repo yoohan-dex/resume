@@ -15,8 +15,10 @@ section {
 }
 
 .content-section {
-  box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.2),
-              0px -1px 4px 0px rgba(33, 33, 33, 0.1) inset; 
+  @media only screen{
+    box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.2),
+              0px -1px 1px 0px rgba(33, 33, 33, 0.1) inset; 
+  }
   @media (max-width: $screen-xs-max){
     margin-bottom: $padding-large-vertical;
   }
@@ -28,8 +30,10 @@ section {
   border-top-left-radius: $border-radius-small;
   border-top-right-radius: $border-radius-small;
   padding-top:$padding-small-vertical;
-  box-shadow: 0px -5px 8px 1px rgba(0, 0, 0, 0.1),
+  @media only screen {
+    box-shadow: 0px -5px 8px 1px rgba(0, 0, 0, 0.1),
               0px -2px 2px rgba(0, 0, 0, 0.1);
+  }
   margin-bottom: $padding-small-vertical;
 }
 
