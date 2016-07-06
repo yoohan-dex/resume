@@ -11,12 +11,12 @@
 ##环境要求
 
 1. [node.js >=4.4](https://nodejs.org/en/)
-2. [ruby编程语言](https://www.ruby-lang.org/zh_cn/)
+2. [Ruby编程语言](https://www.ruby-lang.org/zh_cn/)
 3. 若要自动部署到page服务器得先存到自己的github上，并且开启SSH Keys
 
 ##Requirements
 1. [node.js >=4.4](https://nodejs.org/en/)
-2. [ruby lang](https://www.ruby-lang.org/)
+2. [Ruby lang](https://www.ruby-lang.org/)
 3. For deploying you should fork the repo to your github and it depands SSH Keys.  
 
 ##安装与部署
@@ -40,9 +40,9 @@
 
 ##反馈
 
-### 若使用中有任何问题，欢迎反馈，可以在DEMO中找到我的联系方式
+ 若使用中有任何问题，欢迎反馈，可以在DEMO中找到我的联系方式
 
 ##Feedback
 
-### Welcome feedback if you have any problems and the demo have all my contact  
+ Welcome feedback if you have any problems and the demo have all my contact  
 
