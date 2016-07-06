@@ -1,6 +1,7 @@
 const StaticSitePlugin = require('static-site-generator-webpack-plugin');
 const resumeData = require('./resume.js');
 const path = require('path');
+const autoprefixer = require('autoprefixer');
 
 module.exports = {
   entry: './app.js',
@@ -20,13 +21,16 @@ module.exports = {
         },
       }, {
         test: /\.scss$/,
-        loaders: ['css-loader?sourceMap=true', 'sass'],
+        loaders: ['css-loader?sourceMap=true', 'postcss', 'sass'],
       }, {
         test: /\.(eot|svg|ttf|woff|woff2)\??.*$/,
         loader: 'url-loader?limit=50000&name=[path][name].[ext]',
       },
     ],
   },
+  postcss: [
+    autoprefixer,
+  ],
   sassLoader: {
     includePaths: [path.resolve(__dirname, './app/sass/utils'),
                   path.resolve(__dirname, './app/sass/components'),
