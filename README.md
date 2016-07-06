@@ -10,13 +10,13 @@
 * Deploy to `github-page` just one command line  
 ##环境要求
 
-1. [@node.js >=4.4](https://nodejs.org/en/)
-2. [@ruby编程语言](https://www.ruby-lang.org/zh_cn/)
+1. [node.js >=4.4](https://nodejs.org/en/)
+2. [ruby编程语言](https://www.ruby-lang.org/zh_cn/)
 3. 若要自动部署到page服务器得先存到自己的github上，并且开启SSH Keys
 
 ##Requirements
-1. [@node.js >=4.4](https://nodejs.org/en/)
-2. [@ruby lang](https://www.ruby-lang.org/)
+1. [node.js >=4.4](https://nodejs.org/en/)
+2. [ruby lang](https://www.ruby-lang.org/)
 3. For deploying you should fork the repo to your github and it depands SSH Keys.  
 
 ##安装与部署
@@ -24,7 +24,7 @@
 1. 点击`fork`之后在自己的仓库`git clone`到本地
 2. 在Teminal执行`npm install`
 3. 再执行`npm start`可以启动热加载服务器，
-进入[@http://localhost:8080/webpack-dev-server/](http://localhost:8080/webpack-dev-server/)可以预览内容
+进入[http://localhost:8080/webpack-dev-server/](http://localhost:8080/webpack-dev-server/)可以预览内容
 4. 修改根目录下的`resume.js`文件
 5. 执行`npm run prod`生成静态文件到根目录下的`build`文件夹中
 6. 执行`npm run deploy`可push到当前仓库的`gh-page`的branch
@@ -33,7 +33,7 @@
 
 1. After `fork` go to your github `git clone` to your workspace
 2. Run `npm install` on Teminal
-3. Use `npm start` you can setup hot-load server for page,then you can check[@http://localhost:8080/webpack-dev-server/](http://localhost:8080/webpack-dev-server/) 
+3. Use `npm start` you can setup hot-load server for page,then you can check[http://localhost:8080/webpack-dev-server/](http://localhost:8080/webpack-dev-server/) 
 4. Modify `resume.js` found from the root directory.
 5. Run `npm run prod` will quickly generate a static HTML file to `bulid` diractory
 6. Run `npm run deploy` will push into recent repo's `gh-page` branch
