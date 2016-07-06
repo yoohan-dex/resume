@@ -21,13 +21,15 @@ module.exports = {
       }, {
         test: /\.scss$/,
         loaders: ['css-loader?sourceMap=true', 'sass'],
+      }, {
+        test: /\.(eot|svg|ttf|woff|woff2)\??.*$/,
+        loader: 'url-loader?limit=50000&name=[path][name].[ext]',
       },
     ],
   },
   sassLoader: {
     includePaths: [path.resolve(__dirname, './app/sass/utils'),
                   path.resolve(__dirname, './app/sass/components'),
-                  path.resolve(__dirname, './app/sass/utils/static'),
                   path.resolve(__dirname, './app/sass/wheels')],
     outputStyle: 'compressed',
     sourceMap: true,
@@ -47,6 +49,6 @@ module.exports = {
   },
   devtool: 'source-map',
   plugins: [
-    new StaticSitePlugin('bundle.js', ['/resume', '/'], resumeData),
+    new StaticSitePlugin('bundle.js', ['/build', '/'], resumeData),
   ],
 };
