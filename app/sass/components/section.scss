@@ -8,11 +8,11 @@ section {
 .content-section-item,
 .content-section {
   @media only screen {
+    border-radius: $border-radius-small;
     border-top: 3px solid $bright-color;
   }
   background: $easy-white;
   margin-bottom: $padding-container-vertical;
-  border-radius: $border-radius-small;
   padding-bottom: $padding-large-vertical;
 }
 
@@ -35,6 +35,9 @@ section {
   @media only screen {
     box-shadow: 0px -5px 8px 1px rgba(0, 0, 0, 0.1),
               0px -2px 2px rgba(0, 0, 0, 0.1);
+  }
+  @media print {
+    border: 1px solid $light-gray;
   }
   margin-bottom: $padding-small-vertical;
 }
