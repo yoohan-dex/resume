@@ -7,7 +7,9 @@ section {
 
 .content-section-item,
 .content-section {
-  border-top: 3px solid $bright-color;
+  @media only screen {
+    border-top: 3px solid $bright-color;
+  }
   background: $easy-white;
   margin-bottom: $padding-container-vertical;
   border-radius: $border-radius-small;

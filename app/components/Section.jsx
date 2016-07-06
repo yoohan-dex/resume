@@ -8,10 +8,10 @@ const Section = (props) => {
     </h3>
   ) : null;
   const demo = props.demo ? (
-    <a href={props.demo} className="project-demo">DEMO</a>
+    <a href={props.demo} className="project-demo invisible-print">DEMO</a>
   ) : null;
   const source = props.source ? (
-    <a href={props.source} className="project-source">源代码</a>
+    <a href={props.source} className="project-source invisible-print">源代码</a>
   ) : null;
   //   <div className="timeline-wrapper">
   //     <ul className="sec-content timeline">

@@ -2,7 +2,7 @@ header {
 	@include float-container;
 	padding-bottom: $padding-base-vertical;
 	background-color: $bright-color;
-	color: white;
+	color: $easy-white;
 	@media only screen {
         box-shadow: 2px 3px 3px 2px rgba(0, 0, 0, 0.3),
               0px -2px 5px 0px rgba(255, 255, 255, 0.2) inset; 
@@ -18,62 +18,72 @@ header {
   }
 }
 .title {
-    float: right;
-    text-align: right;
-    margin: 0;
+	float: right;
+	text-align: right;
+	margin: 0;
 
-    @media screen and (max-width: $screen-xs-max) {
-      float: none;
-      text-align: center;
-    }
+	@media screen and (max-width: $screen-xs-max) {
+		float: none;
+		text-align: center;
+	}
 }
 
 .title h1, .title h2 {
-    margin: $padding-small-vertical 0;
-    line-height: 1;
+	margin: $padding-small-vertical 0;
+	line-height: 1;
+	@media print {
+		color: $dark-color;
+	}
 }
 
 .title h1 {
-    padding: $padding-small-vertical 0;
-    color: $easy-white;
+  padding: $padding-small-vertical 0;
+  color: $easy-white;
 }
 
 .title h2 {
-    padding: $padding-small-vertical $padding-base-vertical;
-    font-weight: normal;
+  padding: $padding-small-vertical $padding-base-vertical;
+  font-weight: normal;
 }
 
 address {
-    @include float-container;
+  @include float-container;
 }
 
 header .contact {
-    float: left;
-    margin: 0;
-    padding-bottom: $padding-container-vertical;
-    padding-left: $padding-large-horizontal;
-    @media print, (max-width: $screen-xs-max) {
-      float: none;
-      margin-top: $padding-large-vertical;
-      padding-left: $padding-xs-horizontal;
-    }
+	float: left;
+	margin: 0;
+	padding-bottom: $padding-container-vertical;
+	padding-left: $padding-large-horizontal;
+	@media print, (max-width: $screen-xs-max) {
+		float: none;
+		margin-top: $padding-large-vertical;
+		padding-left: $padding-xs-horizontal;
+	}
 }
 
 header .contact li {
-    list-style-type: none;
-    font-style: normal;
-    line-height: 1.4;
-    font-size: $font-size-medium;
-    word-break: break-all;
+	list-style-type: none;
+	font-style: normal;
+	line-height: 1.4;
+	font-size: $font-size-medium;
+	word-break: break-all;
+	color: $easy-white;
+	@media print {
+		color: $dark-color;
+	}
 }
 
 header a:link, header a:visited {
-    color: $easy-white;
+	color: $easy-white;
+	@media print {
+		color: $dark-color;
+	}
 }
 
 
 header a:hover, header a:active {
-    color: $font-gray;
+	color: $font-gray;
 }
 
 
