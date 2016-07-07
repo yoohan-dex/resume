@@ -50,7 +50,7 @@ module.exports = {
   },
   experience: [{
     place: '腾讯用户研究与体验设计部',
-    en: 'frontend',
+    en: 'Frontend',
     ch: '前端开发',
     start: '2017.06.12',
     end: '2017.012.01',
@@ -61,7 +61,7 @@ module.exports = {
     ],
   }, {
     place: '广东海洋大学领沃实验室',
-    en: 'DeepLearn',
+    en: 'DeepLearning',
     ch: '深度学习',
     start: '2016.01.1',
     end: '2016.10.01',
