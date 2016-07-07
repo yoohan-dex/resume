@@ -27,13 +27,13 @@ const Contact = (contact) => {
     case 'blog':
       return (
         <li className="contact-rss">
-          <a href={contact.value}>{contact.value}</a>
+          <a href={`tel:${contact.value}`}>{contact.value}</a>
         </li>
       );
     case 'phone':
       return (
         <li className="contact-phone">
-          {contact.value}
+          <a href="{contact.value}">{contact.value}</a>
         </li>
       );
     // case 'weibo':
