@@ -1,39 +1,40 @@
 import React from 'react';
 
 const Contact = (contact) => {
+  const value = contact.value;
   switch (contact.type) {
     case 'email':
       return (
         <li className="contact-envelope">
-          <a href={`mailto://${contact.value}`}>
-            {contact.value}
+          <a href={`mailto://${value}`}>
+            {value}
           </a>
         </li>
       );
     case 'wechat':
       return (
         <li className="contact-wechat">
-          {contact.value}
+          {value}
         </li>
       );
     case 'github':
       return (
         <li className="contact-github">
-          <a href={`http://github.com/${contact.value}`}>
-            {`http://github.com/${contact.value}`}
+          <a href={`http://github.com/${value}`}>
+            {`http://github.com/${value}`}
           </a>
         </li>
       );
     case 'blog':
       return (
         <li className="contact-rss">
-          <a href={`tel:${contact.value}`}>{contact.value}</a>
+          <a href={value}>{value}</a>
         </li>
       );
     case 'phone':
       return (
         <li className="contact-phone">
-          <a href="{contact.value}">{contact.value}</a>
+          <a href={`tel: ${parseInt(value, 10)}`}>{value}</a>
         </li>
       );
     // case 'weibo':
