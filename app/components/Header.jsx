@@ -1,8 +1,8 @@
 import React, { PropTypes } from 'react';
 import Contact from '../wheels/Contact';
 
-const Header = (props) => {
-  const renderContact = (contact) =>
+const Header = props => {
+  const renderContact = contact =>
     <Contact type={contact.type} value={contact.value} />;
   return (
     <header className="header-row">

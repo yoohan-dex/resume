@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Contact = (contact) => {
+const Contact = contact => {
   const value = contact.value;
   switch (contact.type) {
     case 'email':

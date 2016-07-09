@@ -1,9 +1,9 @@
 import React, { PropTypes } from 'react';
 import Section from './Section';
-const ExperienceItem = (props) => {
+const ExperienceItem = props => {
   const exp = props.exp;
 
-  const renderDescription = (desc) =>
+  const renderDescription = desc =>
     <dd className="exp-description-item">{desc}</dd>;
   return (
     <Section item section={exp} startTime={exp.start} endTime={exp.end}>

@@ -1,11 +1,11 @@
 import React, { PropTypes } from 'react';
 import Section from './Section';
 import Progress from '../wheels/Progress';
-const Language = (props) => {
+const Language = props => {
   const section = props.section_names.language;
-  const renderCertification = (certification) =>
+  const renderCertification = certification =>
     <Progress cert={certification} />;
-  const renderDescription = (description) =>
+  const renderDescription = description =>
     <dd className="language-desc-item">{description}</dd>;
   return (
     <Section section={section}>

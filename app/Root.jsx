@@ -3,7 +3,7 @@ import Index from './components/Index';
 import indexCss from './sass/index.scss';
 import ga from './wheels/ga';
 
-const Root = (props) => {
+const Root = props => {
   const gaScript = props.ga_id ?
     <script dangerouslySetInnerHTML={{ __html: ga(props.ga_id) }} /> : null;
   return (

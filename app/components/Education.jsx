@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 import Section from './Section';
-const Education = (props) => {
+const Education = props => {
   const education = props.education;
   const section = props.section_names.education;
   const renderHonor = (honor) =>

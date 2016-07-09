@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-const Section = (props) => {
+const Section = props => {
   const timeline = props.startTime ? (
     <h3 className="timeline-wrapper">
       <time className="timeline-title">

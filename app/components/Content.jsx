@@ -5,7 +5,7 @@ import Experience from './Experience';
 import Project from './Project';
 import Skills from './Skills';
 
-const Content = (props) => (
+const Content = props => (
   <article className="content row">
     <article className="col-6 first col">
       <Education {...props} />

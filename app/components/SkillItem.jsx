@@ -1,8 +1,8 @@
 import React, { PropTypes } from 'react';
 
-const SkillItem = (props) => {
+const SkillItem = props => {
   const item = props.item;
-  const renderDescription = (desc) =>
+  const renderDescription = desc =>
     <dd className="skill-description-item">{desc}</dd>;
   return (
     <dl className="skill-description">
