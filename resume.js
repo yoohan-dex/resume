@@ -29,7 +29,7 @@ module.exports = {
     major: '计算机科学（本科）',
     start: 2013,
     end: 2017,
-    honor: ['2016年大力神杯`嵌入式省赛三等奖`', '2017年度优秀毕业生'],
+    honor: ['2016年蓝桥杯嵌入式省赛三等奖 ', '2017年度优秀毕业生'],
   },
   language: {
     type: 'english',
@@ -45,7 +45,7 @@ module.exports = {
     descriptions: [
       '能 `流畅阅读` 英文专业书籍、文档',
       '可 `无字幕` 观看MOOC课程、开发者大会视频',
-      '能够在`Medium`、`Discord`、`github` 等社区正常交流',
+      '能够在`Medium`、`Discord`、`Github` 等社区正常交流',
     ],
   },
   experience: [{

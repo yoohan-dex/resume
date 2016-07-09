@@ -5,9 +5,8 @@
 }
 
 .exp-description {
-  padding-right: $padding-small-horizontal;
-  margin: $padding-small-vertical 0;
-
+  padding: $padding-small-vertical $padding-small-horizontal;
+  margin: $padding-base-vertical 0;
 }
 
 .exp-description-item {

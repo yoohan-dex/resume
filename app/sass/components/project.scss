@@ -21,9 +21,8 @@
 }
 
 .project-description {
-  padding-left: $padding-small-horizontal;
-  padding-right: $padding-small-horizontal;
-  margin: $padding-small-vertical 0;
+  padding: $padding-small-vertical $padding-small-horizontal;
+  margin: $padding-base-vertical 0;
 
 }
 .project-description-item {
