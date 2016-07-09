@@ -18,17 +18,8 @@ const Section = props => {
     <h3 className="project-link-wrapper">
       {demo}
       {source}
-    </h3>) : null;
-
-  //   <div className="timeline-wrapper">
-  //     <ul className="sec-content timeline">
-  //       {props.children}
-  //     </ul>
-  //   </div>) : (
-  //   <div className="sec-content">
-  //     {props.children}
-  //   </div>
-  // );
+    </h3>
+  ) : null;
   return (
     <section
       className={`
@@ -40,8 +31,8 @@ const Section = props => {
           <span className={`sec${props.item ? '-item' : ''}-title-ch`}>{props.section.ch}</span>
           <span className={`sec${props.item ? '-item' : ''}-title-en`}>{props.section.en}</span>
         </h3>
-        {timeline}
         {projectLink}
+        {timeline}
       </div>
       <div className={props.iteminitem ? 'sec-item-in-item' : 'sec-content'}>
         {props.children}
