@@ -20,6 +20,8 @@ const Section = props => {
         {demo}
         {source}
       </h3>);
+  } else {
+    projectLink = null;
   }
   //   <div className="timeline-wrapper">
   //     <ul className="sec-content timeline">
