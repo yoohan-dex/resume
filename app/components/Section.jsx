@@ -13,6 +13,14 @@ const Section = props => {
   const source = props.source ? (
     <a href={props.source} className="project-source invisible-print">源代码</a>
   ) : null;
+  let projectLink;
+  if (props.demo || props.source) {
+    projectLink = (
+      <h3 className="project-link-wrapper">
+        {demo}
+        {source}
+      </h3>);
+  }
   //   <div className="timeline-wrapper">
   //     <ul className="sec-content timeline">
   //       {props.children}
@@ -34,10 +42,7 @@ const Section = props => {
           <span className={`sec${props.item ? '-item' : ''}-title-en`}>{props.section.en}</span>
         </h3>
         {timeline}
-        <h3 className="project-link-wrapper">
-          {demo}
-          {source}
-        </h3>
+        {projectLink}
       </div>
       <div className={props.iteminitem ? 'sec-item-in-item' : 'sec-content'}>
         {props.children}
