@@ -6,7 +6,7 @@ const ProjectItem = props => {
   const renderDescription = desc =>
     <dd className="project-description-item">{desc}</dd>;
   return (
-    <Section item section={project} source={project.source} demo={project.demo}>
+    <Section item project section={project} source={project.source} demo={project.demo}>
       <dl className="project-description">
         {project.descriptions.map(renderDescription)}
       </dl>

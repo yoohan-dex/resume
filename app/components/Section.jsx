@@ -13,16 +13,13 @@ const Section = props => {
   const source = props.source ? (
     <a href={props.source} className="project-source invisible-print">源代码</a>
   ) : null;
-  let projectLink;
-  if (props.demo || props.source) {
-    projectLink = (
-      <h3 className="project-link-wrapper">
-        {demo}
-        {source}
-      </h3>);
-  } else {
-    projectLink = null;
-  }
+
+  const projectLink = props.project ? (
+    <h3 className="project-link-wrapper">
+      {demo}
+      {source}
+    </h3>) : null;
+
   //   <div className="timeline-wrapper">
   //     <ul className="sec-content timeline">
   //       {props.children}
@@ -60,6 +57,7 @@ Section.propTypes = {
   demo: PropTypes.string,
   source: PropTypes.string,
   item: PropTypes.bool,
+  project: PropTypes.bool,
   iteminitem: PropTypes.bool,
   children: PropTypes.node,
 };
