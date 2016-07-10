@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import Section from './Section';
 const ExperienceItem = props => {
-  const exp = props.exp;
+  const { exp } = props;
 
   const renderDescription = desc =>
     <dd className="exp-description-item">{desc}</dd>;

@@ -1,8 +1,8 @@
 import React from 'react';
 
 const Contact = contact => {
-  const value = contact.value;
-  switch (contact.type) {
+  const { value, type } = contact;
+  switch (type) {
     case 'email':
       return (
         <li className="contact-envelope">

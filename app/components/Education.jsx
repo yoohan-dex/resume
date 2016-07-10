@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import Section from './Section';
 const Education = props => {
-  const education = props.education;
+  const { education } = props;
   const section = props.section_names.education;
   const renderHonor = (honor) =>
     <dd className="education-honor">{honor}</dd>;

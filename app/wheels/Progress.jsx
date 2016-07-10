@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 
 const Progress = props => {
-  const cert = props.cert;
+  const { cert } = props;
   const scoreHeight = Math.floor(cert.score / cert.full * 100);
   const style = { width: `${scoreHeight}%` };
   return (
