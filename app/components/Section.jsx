@@ -1,5 +1,10 @@
 import React, { PropTypes } from 'react';
+import classnames from 'classnames';
+
 const Section = props => {
+  const { item } = props;
+
+
   const timeline = props.startTime ? (
     <h3 className="timeline-wrapper">
       <time className="timeline-title">
@@ -23,13 +28,13 @@ const Section = props => {
   return (
     <section
       className={`
-        ${props.item ? 'content-section-item' : 'content-section'} 
+        ${item ? 'content-section-item' : 'content-section'} 
       `}
     >
       <div className="sec-title-wrapper">
-        <h3 className={props.item ? 'sec-title-item' : 'sec-title'}>
-          <span className={`sec${props.item ? '-item' : ''}-title-ch`}>{props.section.ch}</span>
-          <span className={`sec${props.item ? '-item' : ''}-title-en`}>{props.section.en}</span>
+        <h3 className={item ? 'sec-title-item' : 'sec-title'}>
+          <span className={classnames({ 'sec-title-ch': !item, 'sec-item-title-ch': item })}>{props.section.ch}</span>
+          <span className={classnames({ 'sec-title-en': !item, 'sec-item-title-en': item })}>{props.section.en}</span>
         </h3>
         {projectLink}
         {timeline}
