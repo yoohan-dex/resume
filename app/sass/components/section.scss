@@ -25,6 +25,11 @@ section {
     margin-bottom: $padding-large-vertical;
   }
 }
+.content-section,
+.content-section-item {
+  background-image: url($section-image-path);
+  background-repeat: repeat; 
+}
 
 .content-section-item {
   // border-top: 3px solid $theme-color;
