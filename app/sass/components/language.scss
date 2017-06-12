@@ -3,12 +3,13 @@
 }
 
 .language-certifications {
-  margin: 0;
-  padding: $padding-small-vertical $padding-small-horizontal;
+  margin: $padding-small-horizontal $padding-small-vertical;
+  // padding: $padding-small-vertical $padding-small-horizontal;
   @media (max-width: $screen-xs-max){
     padding: 0 $padding-small-horizontal;
     padding-right: 0;
   }
+
 }
 
 .language-cert-wrapper {

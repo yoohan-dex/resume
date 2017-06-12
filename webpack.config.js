@@ -19,43 +19,36 @@ module.exports = {
         query: {
           presets: ['es2016', 'react'],
         },
-      }, {
+      },
+      {
         test: /\.scss$/,
-        loaders: ['css-loader?sourceMap=true', 'postcss', 'sass'],
-      }, {
+        loaders: ['css-loader?sourceMap=true', 'postcss', 'sass-loader'],
+      },
+      {
         test: /\.(eot|svg|ttf|woff|woff2)\??.*$/,
         loader: 'url-loader?limit=50000&name=[path][name].[ext]',
-      }, {
+      },
+      {
         test: /\.png$/,
         loader: 'url-loader',
       },
     ],
   },
-  postcss: [
-    autoprefixer,
-  ],
+  postcss: [autoprefixer],
   sassLoader: {
-    includePaths: [path.resolve(__dirname, './app/sass/utils'),
-                  path.resolve(__dirname, './app/sass/components'),
-                  path.resolve(__dirname, './app/sass/wheels')],
+    includePaths: [
+      path.resolve(__dirname, './app/sass/utils'),
+      path.resolve(__dirname, './app/sass/components'),
+      path.resolve(__dirname, './app/sass/wheels'),
+    ],
     outputStyle: 'compressed',
     sourceMap: true,
   },
   resolve: {
     modules: ['app', 'node_module'],
-    extensions: [
-      '',
-      '.js',
-      '.jsx',
-      '.scss',
-    ],
-    packageMains: [
-      'jsnext:main',
-      'main',
-    ],
+    extensions: ['', '.js', '.jsx', '.scss'],
+    packageMains: ['jsnext:main', 'main'],
   },
   devtool: 'source-map',
-  plugins: [
-    new StaticSitePlugin('bundle.js', ['/build', '/'], resumeData),
-  ],
+  plugins: [new StaticSitePlugin('bundle.js', ['/build', '/'], resumeData)],
 };

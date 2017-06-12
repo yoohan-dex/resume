@@ -37,12 +37,12 @@ const Contact = contact => {
           <a href={`tel: ${parseInt(value, 10)}`}>{value}</a>
         </li>
       );
-    // case 'weibo':
-    //   return (
-    //     <li className="contact-weibo">
-    //       <a href={`http://weibo.com/${contact.value}`}>{contact.value}</a>
-    //     </li>
-    //   );
+    case 'weibo':
+      return (
+        <li className="contact-weibo">
+          <a href={`http://weibo.com/${contact.value}`}>{contact.value}</a>
+        </li>
+      );
     default:
       return null;
   }

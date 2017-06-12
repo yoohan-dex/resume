@@ -9,7 +9,7 @@ const Content = props => (
   <article className="content row">
     <article className="col-6 first col">
       <Education {...props} />
-      <Language {...props} />
+      {props.language && <Language {...props} />}
       <Experience {...props} />
     </article>
     <article className="col-6 last col">
@@ -18,7 +18,5 @@ const Content = props => (
     </article>
   </article>
 );
-
-
 
 export default Content;

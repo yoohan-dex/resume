@@ -18,8 +18,7 @@ section {
 
 .content-section {
   @media only screen{
-    box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.2),
-              0px -1px 1px 0px rgba(33, 33, 33, 0.1) inset; 
+    box-shadow: 0px 5px 40px 0 $light-gray;
   }
   @media (max-width: $screen-xs-max){
     margin-bottom: $padding-large-vertical;
@@ -37,18 +36,27 @@ section {
   border-top-left-radius: $border-radius-small;
   border-top-right-radius: $border-radius-small;
   padding-top:$padding-small-vertical;
-  @media only screen {
-    box-shadow: 0px -5px 8px 1px rgba(0, 0, 0, 0.1),
-              0px -2px 2px rgba(0, 0, 0, 0.1);
-  }
+  // @media only screen {
+  //   box-shadow: 0px -2px 20px rgba(155, 155, 155, 0.05),
+  //             0px -2px 2px rgba(0, 0, 0, 0.1);
+  // }
   @media print {
-    border: 1px solid $light-gray;
+    // border: 1px solid $light-gray;
   }
   margin-bottom: $padding-small-vertical;
 }
 
 
 .sec-title-wrapper {
+  // box-shadow: 0 -8px 10px rgba(33, 33, 33, 0.2) inset;
+  @media print {
+  border-bottom: 3px solid rgba(100, 100, 100, 0.2);
+    
+  }
+  border-bottom: 2px solid rgba(100, 100, 100, 0.1);
+  @include float-container;
+}
+.sec-item-title-wrapper {
   @include float-container;
 }
 
@@ -75,25 +83,34 @@ section {
 
 
 
-.sec-title-ch,
-.sec-item-title-ch {
-  font-size: $font-size-large;
+.sec-title-ch {
   float: left;
   font-weight: bold;
   @include mediumFont;
 }
 .sec-item-title-ch {
+  font-size: $font-size-base;
+  float: left;
+  font-weight: bold;
+}
+.sec-item-title-ch {
   font-weight: 600;
 }
 
-.sec-title-en,
-.sec-item-title-en {
+.sec-title-en {
   font-size: $font-size-base;
   float: left;
   clear: left;
   color: $light-color;
   font-weight: bold;
   @include mediumFont;
+}
+.sec-item-title-en {
+  font-size: $font-size-base;
+  float: left;
+  clear: left;
+  color: $light-color;
+  font-weight: bold;
 }
 @mixin fa-sec-icon($content){
   @include fa-icon($sec-icon-size, $sec-icon-padding, $text-color);
@@ -102,7 +119,7 @@ section {
 
 .sec-item-title-en {
   font-weight: 600;
-  font-size: $font-size-small;
+  font-size: $font-size-base;
 }
 // .sec-title-wrapper::before {
 //   @include fa-sec-icon($fa-var-github-square)

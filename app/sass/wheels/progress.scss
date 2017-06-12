@@ -2,13 +2,12 @@
 
 .progress {
   overflow: hidden;
-  border-bottom: 1px solid $light-gray;
+  box-shadow: 0 -2px $light-gray inset;
 }
 
 .progress-status {
   border-bottom: 2px solid $bright-color; 
   text-align: right;
-  width: 50px;
   padding-right: $padding-small-horizontal; 
 }
 

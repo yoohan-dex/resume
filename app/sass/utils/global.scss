@@ -38,10 +38,13 @@ h6 { font-size: $font-size-h6;}
 
 .container {
   background-color: $easy-white;
-  box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+  box-shadow: 2px 2px 20px $light-gray;
 }
 
 strong {
   font-weight: bold;
   color: $bright-color;
+}
+*{
+  font-family: 'Franklin Gothic Medium','microsoft Yahei', 'Arial Narrow', Arial, sans-serif;
 }

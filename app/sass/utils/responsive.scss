@@ -29,6 +29,10 @@ header, .content {
     margin-top: 0;
     margin-bottom: $padding-small-vertical;
   }
+  .content {
+    padding: $padding-large-vertical $padding-small-horizontal $padding-container-vertical;
+    
+  }
 }
 .invisible-lt-sm {
     @media screen and (min-width: $screen-md-min) {

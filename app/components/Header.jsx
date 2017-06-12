@@ -2,8 +2,7 @@ import React, { PropTypes } from 'react';
 import Contact from '../wheels/Contact';
 
 const Header = props => {
-  const renderContact = contact =>
-    <Contact type={contact.type} value={contact.value} />;
+  const renderContact = contact => <Contact type={contact.type} value={contact.value} />;
   return (
     <header className="header-row">
       <section className="title">
@@ -11,9 +10,11 @@ const Header = props => {
         <h2>{props.job_description.join('/')}</h2>
       </section>
       <address>
-        <ul className="contact">
-          {props.contact.map(renderContact)}
-        </ul>
+        <div className="address-wrapper">
+          <ul className="contact">
+            {props.contact.map(renderContact)}
+          </ul>
+        </div>
       </address>
     </header>
   );
