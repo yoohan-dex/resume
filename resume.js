@@ -36,7 +36,7 @@ module.exports = {
     major: '计算机科学（本科）',
     start: 2013,
     end: 2017,
-    honor: ['2016年蓝桥杯嵌入式省赛三等奖 ', '2017年度优秀毕业生'],
+    honor: ['2016年蓝桥杯嵌入式省赛三等奖 ', '2017年度优秀毕业生(假的)'],
   },
   language: {
     type: 'english',
@@ -77,7 +77,11 @@ module.exports = {
       ch: '深度学习',
       start: '2016.01.1',
       end: '2016.10.01',
-      descriptions: ['引导新生走进前端的世界', '秘密开发足以 `毁灭世界` 的 `人工智能`', '负责日常的杀人灭口工作'],
+      descriptions: [
+        '引导新生走进前端的世界',
+        '秘密开发足以 `毁灭世界` 的 `人工智能`',
+        '负责日常的杀人灭口工作',
+      ],
     },
   ],
   projects: [
@@ -117,7 +121,10 @@ module.exports = {
         },
         {
           brief: '`ECMAScript` ( `JavaScript` )',
-          descriptions: ['熟练使用` ES6 `, 熟悉JS `函数式编程` ', '熟悉 `ECMAScript` 新标准及 `JS处理工具` '],
+          descriptions: [
+            '熟练使用` ES6 `, 熟悉JS `函数式编程` ',
+            '熟悉 `ECMAScript` 新标准及 `JS处理工具` ',
+          ],
         },
         {
           brief: '`React` ， `Redux` ， `RxJS`， `Bootstrap` ',
